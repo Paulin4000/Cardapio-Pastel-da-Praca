@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio Online</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .item { border: 1px solid #ccc; padding: 10px; margin: 10px; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <h1>Cardápio</h1>
+    <button onclick="mostrarCardapio()">Ver Cardápio</button>
+    <div id="cardapio" class="hidden">
+        <div class="item">
+            <h3>Pizza Margherita</h3>
+            <p>Queijo, tomate e manjericão</p>
+            <p>R$ 30,00</p>
+        </div>
+        <div class="item">
+            <h3>Hambúrguer Artesanal</h3>
+            <p>Pão brioche, carne angus, queijo cheddar</p>
+            <p>R$ 25,00</p>
+        </div>
+    </div>
+
+    <script>
+        function mostrarCardapio() {
+            document.getElementById("cardapio").classList.toggle("hidden");
+        }
+    </script>
+</body>
+</html>
+
